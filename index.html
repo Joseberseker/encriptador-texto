@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <header>
+      <!-- Aqui va el logo -->
+      <img class="header__logo" src="" alt="" />
+    </header>
+    <main>
+      <div class="contenedor">
+        <div class="seccion__izquierda">
+          <label class="seccion__izquierda__mensaje" for=""
+            >Ingrese el texto aquí</label
+          >
+          <textarea
+            class="seccion__izquierda__entrada"
+            name=""
+            id=""
+          ></textarea>
+          <p class="seccion__izquierda__aviso">
+            ! Sólo letras minúsculas y sin acentos
+          </p>
+          <div class="seccion__izquierda__botones">
+            <button
+              class="seccion__izquierda__botones__encriptar"
+              type="submit"
+            >
+              Encriptar
+            </button>
+            <button
+              class="seccion__izquierda__botones__desencriptar"
+              type="submit"
+            >
+              Desencriptar
+            </button>
+          </div>
+        </div>
+        <div class="seccion__derecha">
+          <div class="seccion__derecha__seccion__vacio">
+            <img
+              class="seccion__derecha__seccion__vacio__imagen__vacio"
+              src=""
+              alt=""
+            />
+            <h2 class="seccion__derecha__seccion__vacio__mensaje__vacio">
+              Ningun Mensaje fue encontrado
+            </h2>
+            <p class="seccion__derecha__seccion__vacio__mensaje__vacio2">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+          <div class="seccion__derecha__seccion_contenido">
+              <textarea class="seccion__derecha__seccion__contenido__texto__desencriptado" name="" id=""></textarea>
+              <button class="seccion__derecha__seccion__contenido__boton__copiar">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="seccion__footer">Desarrollado por: Jose Ahumada como Challenge de Alura Latam - 2024</footer>
+  </body>
+</html>
