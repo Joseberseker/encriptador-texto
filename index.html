@@ -11,15 +11,14 @@
       <img class="header__logo" src="" alt="" />
     </header>
     <main>
+      <script src="app.js"></script>
       <div class="contenedor">
         <div class="seccion__izquierda">
-          <label class="seccion__izquierda__mensaje" for=""
+          <label class="seccion__izquierda__mensaje"
             >Ingrese el texto aquí</label
           >
           <textarea
-            class="seccion__izquierda__entrada"
-            name=""
-            id=""
+            class="seccion__izquierda__entrada__texto"
           ></textarea>
           <p class="seccion__izquierda__aviso">
             ! Sólo letras minúsculas y sin acentos
@@ -27,7 +26,7 @@
           <div class="seccion__izquierda__botones">
             <button
               class="seccion__izquierda__botones__encriptar"
-              type="submit"
+              onclick="encriptarMensaje();"
             >
               Encriptar
             </button>
@@ -54,7 +53,7 @@
             </p>
           </div>
           <div class="seccion__derecha__seccion_contenido">
-              <textarea class="seccion__derecha__seccion__contenido__texto__desencriptado" name="" id=""></textarea>
+              <textarea class="seccion__derecha__seccion__contenido__texto__desencriptado"  ></textarea>
               <button class="seccion__derecha__seccion__contenido__boton__copiar">Copiar</button>
           </div>
         </div>
