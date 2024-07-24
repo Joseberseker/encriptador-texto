@@ -22,10 +22,10 @@ function encriptarMensaje() {
   let mensaje_a_encriptar_minuscula = mensaje_a_encriptar.toLowerCase();
 
   // reemplazando vocales en el mensaje por palabras encriptadas
-  
+
   mensaje_encriptado_e = mensaje_a_encriptar_minuscula.replaceAll("e", "enter");
   mensaje_encriptado_i = mensaje_encriptado_e.replaceAll("i", "imes");
-  mensaje_encriptado_a =mensaje_encriptado_i.replaceAll("a", "ai");
+  mensaje_encriptado_a = mensaje_encriptado_i.replaceAll("a", "ai");
   mensaje_encriptado_o = mensaje_encriptado_a.replaceAll("o", "ober");
   mensaje_encriptado_u = mensaje_encriptado_o.replaceAll("u", "ufat");
 
@@ -69,4 +69,21 @@ function desencriptarMensaje() {
 
   // mostrando en el textarea el texto encriptado
   mostrar_mensaje_encriptado[0].innerHTML = mensaje_encriptado;
+}
+
+function boton_copiar() {
+  let mensaje = document.getElementsByClassName(
+    "seccion__derecha__seccion__contenido__texto__desencriptado"
+  );
+
+  let mensaje_a_copiar = mensaje[0].value;
+
+  navigator.clipboard
+    .writeText(mensaje_a_copiar)
+    .then(() => {
+      console.log(`${text}`);
+    })
+    .catch((err) => {
+      console.log(`${err}`);
+    });
 }
