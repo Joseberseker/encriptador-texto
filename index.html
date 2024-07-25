@@ -3,22 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
     <title>Encriptador de texto</title>
   </head>
   <body>
     <header>
       <!-- Aqui va el logo -->
-      <img class="header__logo" src="" alt="" />
+      <img class="header__logo" src="./img/Logo.png" alt="" />
     </header>
     <main>
       <script src="app.js"></script>
       <div class="contenedor">
         <div class="seccion__izquierda">
-          <label class="seccion__izquierda__mensaje"
+          <!-- <label class="seccion__izquierda__mensaje"
             >Ingrese el texto aquí</label
-          >
+          > -->
           <textarea
             class="seccion__izquierda__entrada__texto"
+            placeholder="Ingrese el texto aqui"
           ></textarea>
           <p class="seccion__izquierda__aviso">
             ! Sólo letras minúsculas y sin acentos
@@ -42,13 +44,14 @@
           <div class="seccion__derecha__seccion__vacio">
             <img
               class="seccion__derecha__seccion__vacio__imagen__vacio"
-              src=""
+              src="./img/Muñeco.png"
               alt=""
             />
+            
             <h2 class="seccion__derecha__seccion__vacio__mensaje__vacio">
               Ningun Mensaje fue encontrado
             </h2>
-            <p class="seccion__derecha__seccion__vacio__mensaje__vacio2">
+            <p class="seccion__derecha__seccion__vacio__mensaje__vacio">
               Ingresa el texto que desees encriptar o desencriptar.
             </p>
           </div>

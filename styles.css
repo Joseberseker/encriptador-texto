@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root {
+    --color-fondo: #D8DFE8;
+    --color-fondo-derecha: #FFFFFF;
+    --inter--font: "Inter", sans-serif;
+    --regular: 400;
+    --bold: 700;
+    --color-dark-blue: #0A3871;
+    --color-gray: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--inter--font);
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+.header__logo {
+    position: absolute;
+    padding: 40px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--color-fondo);
+    margin: 40px;
+    padding: 40px;
+    /* width: 1440px;
+    height: 1024px; */
+}
+
+.seccion__derecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seccion__derecha__seccion__vacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--color-fondo-derecha);
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    padding: 32px;
+    display: none;
+
+}
+
+.seccion__derecha__seccion_contenido {
+    background: var(--color-fondo-derecha);
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.seccion__izquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 240px;
+    padding-top: 168px;
+    
+}
+
+.seccion__izquierda__entrada__texto {
+    width: 577px;
+    height: 48px;
+    font-size: 32px;
+    color: var(--color-dark-blue);
+    font-weight: var(--regular);
+    background-color: transparent;
+    border-style: none;
+    resize: none;
+    /* margin-left: 240px;
+    margin-top: 168px;
+    margin-bottom: 808px;
+    margin-right: 623px; */  
+}
+
+.seccion__derecha__seccion__contenido__texto__desencriptado {
+    width: 336px;
+    height: 781px;
+    margin-inline: auto;
+    font-size: 24px;
+    font-weight: var(--regular);
+    border-style: none;
+    resize: none;
+}
+
+.seccion__izquierda__aviso {
+    font-size: 12px;
+    color: var(--color-gray);
+    padding-top: 740px;
+    position: absolute;
+}
+
+.seccion__izquierda__entrada__texto::placeholder {
+    color: var(--color-dark-blue);
+}
+
+button {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+button:active {
+    background: var(--color-fondo-derecha);
+    color: var(--color-dark-blue);
+}
+
+.seccion__izquierda__botones__encriptar {
+    background: var(--color-dark-blue);
+    color: var(--color-fondo);
+    border: none;
+}
+
+.seccion__izquierda__botones__desencriptar {
+    background: var(--color-fondo);
+    color: var(--color-dark-blue);
+    border: 1px solid var(--color-dark-blue);
+}
+
+.seccion__derecha__seccion__contenido__boton__copiar {
+    background: var(--color-fondo-derecha);
+    color: var(--color-dark-blue);
+    border: 1px solid var(--color-dark-blue);
+    margin-inline: auto;
+}
+
+.seccion__derecha__seccion__contenido__boton__copiar:active {
+    background: var(--color-fondo);
+    width: 80%;
+}
+
+
+.seccion__footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.seccion__derecha__seccion__vacio__mensaje__vacio{
+    text-align: center;
+}
