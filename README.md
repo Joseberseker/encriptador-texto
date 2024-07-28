@@ -1,2 +1,3 @@
 # Encriptador de Texto
 Challenge que hace parte del proyecto final del módulo Principiante de Programación de Alura Latam y Oracle Next Education
+![encriptador_texto](https://github.com/user-attachments/assets/40db4153-2d24-438e-aa1e-296461ab3405)
