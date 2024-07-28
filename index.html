@@ -8,36 +8,35 @@
   </head>
   <body>
     <header>
-      <!-- Aqui va el logo -->
-      <img class="header__logo" src="./img/Logo.png" alt="" />
     </header>
     <main>
       <script src="app.js"></script>
       <div class="contenedor">
+        <!-- Aqui va el logo -->
+        <img class="header__logo" src="./img/Logo_Tablet.png" alt="" />
         <div class="seccion__izquierda">
-          <!-- <label class="seccion__izquierda__mensaje"
-            >Ingrese el texto aquí</label
-          > -->
           <textarea
             class="seccion__izquierda__entrada__texto"
             placeholder="Ingrese el texto aqui"
           ></textarea>
-          <p class="seccion__izquierda__aviso">
-            ! Sólo letras minúsculas y sin acentos
-          </p>
-          <div class="seccion__izquierda__botones">
-            <button
-              class="seccion__izquierda__botones__encriptar"
-              onclick="encriptarMensaje();"
-            >
-              Encriptar
-            </button>
-            <button
-              class="seccion__izquierda__botones__desencriptar"
-              onclick="desencriptarMensaje();"
-            >
-              Desencriptar
-            </button>
+          <div class="seccion__izquierda__aviso__botones">
+            <p class="seccion__izquierda__aviso">
+              ! Sólo letras minúsculas y sin acentos
+            </p>
+            <div class="seccion__izquierda__botones">
+              <button
+                class="seccion__izquierda__botones__encriptar"
+                onclick="encriptarMensaje();"
+              >
+                Encriptar
+              </button>
+              <button
+                class="seccion__izquierda__botones__desencriptar"
+                onclick="desencriptarMensaje();"
+              >
+                Desencriptar
+              </button>
+            </div>
           </div>
         </div>
         <div class="seccion__derecha">
