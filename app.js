@@ -71,6 +71,14 @@ function desencriptarMensaje() {
     "seccion__izquierda__entrada__texto"
   );
 
+  const contenido_vacio = document.getElementById(
+    'seccion__derecha__seccion__vacio'
+  );
+
+  const contenido = document.getElementById(
+    'seccion__derecha__seccion__contenido'
+  );
+
   // obteniendo el valor del textarea
   let mensaje_a_encriptar = mensaje[0].value;
 
@@ -85,6 +93,13 @@ function desencriptarMensaje() {
   mensaje_encriptado_u = mensaje_encriptado_o.replaceAll("ufat", "u");
 
   mensaje_encriptado = mensaje_encriptado_u;
+
+   //ocultando el panel vacio
+   contenido_vacio.style.display = 'none';
+
+   //mostrando el panel del contenido
+ 
+   contenido.style.display = 'flex';
 
   // mostrando en el textarea el texto encriptado
   mostrar_mensaje_encriptado[0].innerHTML = mensaje_encriptado;
